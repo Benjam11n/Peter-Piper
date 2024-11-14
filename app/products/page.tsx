@@ -1,5 +1,5 @@
-import ProductGrid from '../../components/products/ProductGrid';
-import ProductFilters from '../../components/products/ProductFilters';
+import ProductGrid from "../../components/products/ProductGrid";
+import ProductFilters from "../../components/products/ProductFilters";
 
 export default function ProductsPage() {
   return (

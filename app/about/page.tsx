@@ -1,4 +1,4 @@
-import { Award, Globe, Heart } from 'lucide-react';
+import { Award, Globe, Heart } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -55,7 +55,7 @@ export default function AboutPage() {
             Meet Our Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {['Founder', 'Head of Sourcing', 'Master Taster'].map(
+            {["Founder", "Head of Sourcing", "Master Taster"].map(
               (role, index) => (
                 <div key={index} className="text-center">
                   <div className="w-48 h-48 rounded-full bg-gradient-to-br from-red-100 to-orange-100 mx-auto mb-6">

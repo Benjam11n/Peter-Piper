@@ -1,6 +1,6 @@
-import BlogGrid from '../../components/blog/BlogGrid';
-import FeaturedPost from '../../components/blog/FeaturedPost';
-import CategoryTabs from '../../components/blog/CategoryTabs';
+import BlogGrid from "../../components/blog/BlogGrid";
+import FeaturedPost from "../../components/blog/FeaturedPost";
+import CategoryTabs from "../../components/blog/CategoryTabs";
 
 export default function BlogPage() {
   return (
@@ -12,7 +12,6 @@ export default function BlogPage() {
             Stories, recipes, and insights from the world of luxury chilies
           </p>
         </div>
-        <FeaturedPost />
         <CategoryTabs />
         <BlogGrid />
       </div>
