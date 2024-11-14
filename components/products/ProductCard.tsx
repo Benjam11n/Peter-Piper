@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import ChiliChart from '@/components/ui/ChiliChart';
+import Link from "next/link";
+import ChiliChart from "@/components/ui/ChiliChart";
 
 interface ProductCardProps {
   product: {

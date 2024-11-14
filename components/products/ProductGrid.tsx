@@ -1,39 +1,39 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import ProductCard from './ProductCard';
+import { useState } from "react";
+import ProductCard from "./ProductCard";
 
 const products = [
   {
     id: 1,
-    name: 'Aji Charapita',
-    origin: 'Peruvian Amazon',
+    name: "Aji Charapita",
+    origin: "Peruvian Amazon",
     price: 129.99,
     description: 'Known as "Mother of all Chilis"',
-    category: 'Rare',
-    heatLevel: 'Medium',
+    category: "Rare",
+    heatLevel: "Medium",
     stats: [
-      { attribute: 'Heat', value: 6 },
-      { attribute: 'Smokiness', value: 4 },
-      { attribute: 'Sweetness', value: 7 },
-      { attribute: 'Citrus', value: 8 },
-      { attribute: 'Earthiness', value: 3 },
+      { attribute: "Heat", value: 6 },
+      { attribute: "Smokiness", value: 4 },
+      { attribute: "Sweetness", value: 7 },
+      { attribute: "Citrus", value: 8 },
+      { attribute: "Earthiness", value: 3 },
     ],
   },
   {
     id: 2,
-    name: 'Black Cobra',
-    origin: 'Northern Thailand',
+    name: "Black Cobra",
+    origin: "Northern Thailand",
     price: 89.99,
-    description: 'Rare and exceptionally spicy',
-    category: 'Super Hot',
-    heatLevel: 'Extreme',
+    description: "Rare and exceptionally spicy",
+    category: "Super Hot",
+    heatLevel: "Extreme",
     stats: [
-      { attribute: 'Heat', value: 9 },
-      { attribute: 'Smokiness', value: 7 },
-      { attribute: 'Sweetness', value: 2 },
-      { attribute: 'Citrus', value: 1 },
-      { attribute: 'Earthiness', value: 8 },
+      { attribute: "Heat", value: 9 },
+      { attribute: "Smokiness", value: 7 },
+      { attribute: "Sweetness", value: 2 },
+      { attribute: "Citrus", value: 1 },
+      { attribute: "Earthiness", value: 8 },
     ],
   },
   // Add more products as needed

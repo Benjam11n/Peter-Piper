@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 const categories = [
-  'All',
-  'Cultivation',
-  'Recipes',
-  'Education',
-  'Industry News',
+  "All",
+  "Cultivation",
+  "Recipes",
+  "Education",
+  "Industry News",
 ];
 
 export default function CategoryTabs() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState("All");
 
   return (
     <div className="mb-12">
@@ -25,8 +25,8 @@ export default function CategoryTabs() {
             <span
               className={`px-6 py-3 rounded-full text-sm font-medium transition-colors ${
                 activeCategory === category
-                  ? 'text-white'
-                  : 'text-gray-600 hover:text-red-600'
+                  ? "text-white"
+                  : "text-gray-600 hover:text-red-600"
               }`}
             >
               {category}

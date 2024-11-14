@@ -1,19 +1,19 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const products = [
   {
     id: 1,
-    name: 'Aji Charapita',
-    origin: 'Peruvian Amazon',
+    name: "Aji Charapita",
+    origin: "Peruvian Amazon",
     price: 129.99,
     description: 'Known as "Mother of all Chilis"',
   },
   {
     id: 2,
-    name: 'Black Cobra',
-    origin: 'Northern Thailand',
+    name: "Black Cobra",
+    origin: "Northern Thailand",
     price: 89.99,
-    description: 'Rare and exceptionally spicy',
+    description: "Rare and exceptionally spicy",
   },
 ];
 

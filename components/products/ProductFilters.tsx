@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 const filters = {
-  categories: ['All', 'Rare', 'Super Hot', 'Sweet', 'Smoky'],
-  heatLevels: ['All', 'Mild', 'Medium', 'Hot', 'Extreme'],
-  priceRanges: ['All', 'Under $50', '$50-$100', 'Over $100'],
+  categories: ["All", "Rare", "Super Hot", "Sweet", "Smoky"],
+  heatLevels: ["All", "Mild", "Medium", "Hot", "Extreme"],
+  priceRanges: ["All", "Under $50", "$50-$100", "Over $100"],
 };
 
 export default function ProductFilters() {
   const [activeFilters, setActiveFilters] = useState({
-    category: 'All',
-    heatLevel: 'All',
-    priceRange: 'All',
+    category: "All",
+    heatLevel: "All",
+    priceRange: "All",
   });
 
   const handleFilterChange = (filterType: string, value: string) => {
@@ -39,7 +39,7 @@ export default function ProductFilters() {
                     value={category}
                     checked={activeFilters.category === category}
                     onChange={(e) =>
-                      handleFilterChange('category', e.target.value)
+                      handleFilterChange("category", e.target.value)
                     }
                     className="mr-2"
                   />
@@ -60,7 +60,7 @@ export default function ProductFilters() {
                     value={level}
                     checked={activeFilters.heatLevel === level}
                     onChange={(e) =>
-                      handleFilterChange('heatLevel', e.target.value)
+                      handleFilterChange("heatLevel", e.target.value)
                     }
                     className="mr-2"
                   />
@@ -81,7 +81,7 @@ export default function ProductFilters() {
                     value={range}
                     checked={activeFilters.priceRange === range}
                     onChange={(e) =>
-                      handleFilterChange('priceRange', e.target.value)
+                      handleFilterChange("priceRange", e.target.value)
                     }
                     className="mr-2"
                   />

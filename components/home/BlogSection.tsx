@@ -1,23 +1,23 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const posts = [
   {
     id: 1,
-    title: 'Mastering Chili Fermentation',
-    excerpt: 'Discover the ancient art of fermentation...',
-    category: 'Education',
+    title: "Mastering Chili Fermentation",
+    excerpt: "Discover the ancient art of fermentation...",
+    category: "Education",
   },
   {
     id: 2,
-    title: 'Rare Chili Varieties',
-    excerpt: 'Exploring unique flavors...',
-    category: 'Products',
+    title: "Rare Chili Varieties",
+    excerpt: "Exploring unique flavors...",
+    category: "Products",
   },
   {
     id: 3,
-    title: 'Cooking with Heat',
-    excerpt: 'Tips from master chefs...',
-    category: 'Recipes',
+    title: "Cooking with Heat",
+    excerpt: "Tips from master chefs...",
+    category: "Recipes",
   },
 ];
 

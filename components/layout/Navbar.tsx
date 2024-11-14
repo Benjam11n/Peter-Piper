@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import ThemeToggle from './ThemeToggle';
+import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link
             href="/"
-            className="font-bold text-xl text-red-600 dark:text-red-400"
+            className="font-bold text-2xl text-red-600 dark:text-red-400 font-new-rocker"
           >
             Peter Piper
           </Link>

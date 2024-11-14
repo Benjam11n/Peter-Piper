@@ -1,23 +1,23 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 const posts = [
   {
     id: 1,
-    title: 'Understanding Scoville Heat Units',
-    excerpt: 'A deep dive into the science of measuring chili heat...',
-    category: 'Education',
-    readTime: '5 min read',
-    date: 'Nov 15, 2023',
+    title: "Understanding Scoville Heat Units",
+    excerpt: "A deep dive into the science of measuring chili heat...",
+    category: "Education",
+    readTime: "5 min read",
+    date: "Nov 15, 2023",
   },
   {
     id: 2,
-    title: 'Rare Chilies of the Amazon',
-    excerpt: 'Exploring the hidden gems of South American peppers...',
-    category: 'Cultivation',
-    readTime: '8 min read',
-    date: 'Nov 12, 2023',
+    title: "Rare Chilies of the Amazon",
+    excerpt: "Exploring the hidden gems of South American peppers...",
+    category: "Cultivation",
+    readTime: "8 min read",
+    date: "Nov 12, 2023",
   },
   // Add more posts as needed
 ];

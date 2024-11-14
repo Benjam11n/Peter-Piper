@@ -1,19 +1,19 @@
-import { Flame, Sprout, Book } from 'lucide-react';
+import { Flame, Sprout, Book } from "lucide-react";
 
 const features = [
   {
-    title: 'Heat Index Guide',
-    description: 'Understanding Scoville ratings',
+    title: "Heat Index Guide",
+    description: "Understanding Scoville ratings",
     icon: Flame,
   },
   {
-    title: 'Cultivation Stories',
-    description: 'From seed to harvest',
+    title: "Cultivation Stories",
+    description: "From seed to harvest",
     icon: Sprout,
   },
   {
-    title: 'Recipe Library',
-    description: 'Culinary inspirations',
+    title: "Recipe Library",
+    description: "Culinary inspirations",
     icon: Book,
   },
 ];
