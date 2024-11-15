@@ -3,9 +3,8 @@ import {
   RadarChart,
   PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis,
   ResponsiveContainer,
-} from 'recharts';
+} from "recharts";
 
 interface ChiliStats {
   attribute: string;
@@ -18,19 +17,23 @@ interface ChiliChartProps {
 
 export default function ChiliChart({ stats }: ChiliChartProps) {
   return (
-    <ResponsiveContainer width="100%" height={400}>
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={stats}>
-        <PolarGrid />
-        <PolarAngleAxis dataKey="attribute" />
-        <PolarRadiusAxis angle={30} domain={[0, 10]} />
-        <Radar
-          name="Chili Profile"
-          dataKey="value"
-          stroke="#ef4444"
-          fill="#ef4444"
-          fillOpacity={0.6}
-        />
-      </RadarChart>
-    </ResponsiveContainer>
+    <div className="w-full max-w-md mx-auto">
+      <ResponsiveContainer width="100%" height={250}>
+        <RadarChart cx="50%" cy="50%" outerRadius="60%" data={stats}>
+          <PolarGrid />
+          <PolarAngleAxis
+            dataKey="attribute"
+            tick={{ fill: "#666", fontSize: 14 }}
+          />
+          <Radar
+            name="Chili Profile"
+            dataKey="value"
+            stroke="#ef4444"
+            fill="#ef4444"
+            fillOpacity={0.6}
+          />
+        </RadarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }

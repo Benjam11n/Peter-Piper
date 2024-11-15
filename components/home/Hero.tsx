@@ -2,27 +2,46 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50">
-      <div className="container mx-auto px-4 py-32">
+    <section className="min-h-screen relative overflow-hidden bg-brand-black dark:bg-transparent">
+      {/* Background Effects */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-fire blur-[100px] animate-pulse-slow"></div>
+        <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-fire blur-[100px] animate-pulse-slow delay-1000"></div>
+      </div>
+      <div className="container mx-auto px-4 py-32 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Discover the World&apos;s Finest Chilies
+          <div className="text-white fade-in-up">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6">
+              <span className="text-gradient">Ignite</span> Your
+              <br />
+              Culinary Journey
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Curated rare and exotic chilies for the distinguished palate
+            <p className="text-xl text-gray-400 mb-8">
+              Experience the world's most exclusive chilies,
+              <br />
+              crafted for the distinguished palate
             </p>
-            <Link
-              href="/products"
-              className="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors"
-            >
-              Explore Collection
-            </Link>
+            <div className="flex gap-4">
+              <Link href="/products" className="btn-primary">
+                Explore Collection
+              </Link>
+              <Link
+                href="/about"
+                className="py-3 px-8 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-colors"
+              >
+                Our Story
+              </Link>
+            </div>
           </div>
           <div className="relative scale-up">
-            <div className="aspect-square rounded-full bg-gradient-to-br from-red-100 to-orange-100 flex items-center justify-center">
-              <span className="text-gray-500">Product Image</span>
+            <div className="aspect-square rounded-full bg-gradient-fire p-1 animate-float shadow-glow-lg">
+              <div className="w-full h-full rounded-full bg-brand-black flex items-center justify-center overflow-hidden">
+                <span className="text-white/50">Product Image</span>
+              </div>
             </div>
+            {/* Decorative elements */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-brand-orange/20 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-red/20 rounded-full blur-2xl"></div>
           </div>
         </div>
       </div>

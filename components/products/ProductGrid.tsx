@@ -39,7 +39,7 @@ const products = [
   // Add more products as needed
 ];
 
-export default function ProductGrid() {
+const ProductGrid = () => {
   const [filteredProducts] = useState(products);
 
   return (
@@ -51,4 +51,6 @@ export default function ProductGrid() {
       </div>
     </div>
   );
-}
+};
+
+export default ProductGrid;
